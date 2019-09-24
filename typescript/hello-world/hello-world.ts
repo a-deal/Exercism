@@ -1,7 +1,10 @@
 class HelloWorld {
-    static hello( /* Parameters go here */ ) {
-        // Your code here
+  static hello(val?: string) {
+    if (val) {
+      return `Hello, ${val}!`;
     }
+    return `Hello, World!`;
+  }
 }
 
-export default HelloWorld
+export default HelloWorld;
